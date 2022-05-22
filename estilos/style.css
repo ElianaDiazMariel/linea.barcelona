@@ -4,6 +4,17 @@
     margin: 0;
 }
 
+.collapse {
+    flex-direction: row-reverse;
+}
+.navbar-nav {
+    align-items: flex-end;
+}
+.navbar-toggler {
+    background-color: rgb(201, 95, 47);
+    
+}
+
 body {
     background-color: rgba(173, 158, 158, 0.603);
 }
@@ -58,8 +69,8 @@ figcaption {
 }
 
 
-@media (min-width: 500px) { 
-
+@media (min-width: 500px) {   
+    
     .fabrica img {
         max-height: 200px;
     }
@@ -85,6 +96,7 @@ figcaption {
 }
 
 @media (min-width: 900px ) { 
+
 
     .fabrica img {
         max-height: 300px;
@@ -119,7 +131,7 @@ figcaption {
 
 @media (min-width: 1300px) {
 
-    .fabrica img {
+      .fabrica img {
         max-height: 500px;
     }
     
