@@ -1,0 +1,19 @@
+.site-footer {
+    height: 200px;
+}
+
+
+.redes {
+    a{
+        i {
+            color: white;
+            font-size: 40px;
+        }
+        
+        &:hover {
+            i {
+                color: aqua;
+            }
+        }
+    }
+}

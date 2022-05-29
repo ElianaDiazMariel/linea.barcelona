@@ -1,0 +1,37 @@
+.quehacemos {
+    img{
+        max-height: 400px ;
+    }
+}
+
+figcaption {
+    
+    font-family: 'Quicksand', sans-serif;
+}
+
+.fabrica {
+    img {
+        max-height: 500px;
+    }
+}
+
+
+
+.quehacemos {
+    img {
+        margin: 10px, auto;
+    }
+}
+
+.quehacemos {
+    img:hover {
+        animation: mesa 5s;
+    }
+}
+
+
+@keyframes mesa {
+    10% {
+        transform: scale(2);
+    }
+}

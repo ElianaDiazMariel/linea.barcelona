@@ -1,78 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+@import "footer";
+@import "cliente";
+@import "imag";
+@import "navbar";
+@import "index";
+
+
 *{ 
     padding: 0;
     margin: 0;
-}
-
-.collapse {
-    flex-direction: row-reverse;
-}
-.navbar-nav {
-    align-items: flex-end;
-}
-
-.navbar-toggler {
-    background-color: rgb(209, 127, 88);
-    
-}
-
-
-
-a:hover {
-    background-color:  rgb(201, 95, 47) ;
-}
-
-body {
-    background-color: rgba(173, 158, 158, 0.603);
-}
-
-.carousel-inner img{
-    max-height: 800px;
-}
-
-.site-footer {
-    height: 200px;
-}
-
-.redes a i {
-    color: white;
-    font-size: 40px;
-}
-.redes a i:hover {
-    color: aqua;
-
-}
-.quehacemos img{
-    max-height: 400px ;
-}
-figcaption {
-    
-    font-family: 'Quicksand', sans-serif;
-}
-
-.contactdescription a {
-
-    color: black;
-    font-size: 30px;
-
-}
-.fabrica img {
-    max-height: 500px;
-}
-
-/*ANIMACION primero transformo el elemento y luego le aplico la transición */
-.quehacemos img {
-    margin: 10px, auto;
-}
-
-.quehacemos img:hover {
-    animation: mesa 5s;
-}
-
-@keyframes mesa {
-    10% {
-        transform: scale(2);
-    }
 }
 
 
