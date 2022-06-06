@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap');
+
+
 @import "footer";
 @import "cliente";
 @import "imag";
@@ -9,6 +11,37 @@
 *{ 
     padding: 0;
     margin: 0;
+}
+
+$formulario:(
+   primary: #d17f58,
+
+
+);
+
+@each $boton, $color in $formulario {
+   .btn-#{$boton}{
+      background-color: $color;
+   }
+   
+};
+
+.redsocial {
+    color: black
+}
+.facontactdescription {
+    @extend.redsocial;
+}
+
+
+@mixin productosdestacados ($color) {
+    color: $color;
+   
+    
+}
+
+.productos{
+    @include productosdestacados (black);
 }
 
 

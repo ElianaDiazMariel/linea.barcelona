@@ -90,6 +90,18 @@ body {
   margin: 0;
 }
 
+.btn-primary {
+  background-color: #d17f58;
+}
+
+.redsocial, .facontactdescription {
+  color: black;
+}
+
+.productos {
+  color: black;
+}
+
 @media (min-width: 500px) {
   .fabrica img {
     max-height: 200px;
