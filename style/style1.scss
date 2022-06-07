@@ -45,26 +45,35 @@ $formulario:(
 }
 
 
-@media (min-width: 500px) {   
+@media (min-width: 390px) {   
     
     .fabrica img {
         max-height: 200px;
     }
 
     .nosotros img {
-        max-height: 50px;
+        max-height: 70px;
         
     }
-    
+
+    .quehacemos img{
+        max-width: 200px;
+        
+        flex-direction: column-reverse;
+    }
+    .site-footer {
+        background-color: black;
+        height: 200px;
+        margin-bottom: auto;
+    }
     .main {
         font-family: 'Quicksand', sans-serif;
     }
-    .site-footer {
-        height: 200px;
-        background-color: black;
-    }
+  
     .videos {
         flex-direction: column;
+        max-width: 100px;
+
     }
     
     
@@ -87,7 +96,7 @@ $formulario:(
 
     }
     .quehacemos img{
-        max-height: 300px ;
+        max-height: 200px ;
     }
     .quehacemos img {
         margin: 10px, auto;
