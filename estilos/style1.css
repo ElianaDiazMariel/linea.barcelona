@@ -109,6 +109,9 @@ body {
   .nosotros img {
     max-height: 70px;
   }
+  .container {
+    margin-bottom: 500px;
+  }
   .quehacemos img {
     max-width: 200px;
     margin-bottom: 0px;
