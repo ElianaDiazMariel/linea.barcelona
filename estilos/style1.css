@@ -1,15 +1,103 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap");
-.site-footer {
-  height: 200px;
-}
-
-.redes a i {
+p {
+  font-size: 15px;
+  font-family: "Nunito Sans", sans-serif;
   color: white;
-  font-size: 40px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0 0 15px 0;
 }
 
-.redes a:hover i {
-  color: aqua;
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding-left: 0;
+}
+
+input:focus {
+  outline: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+.footer {
+  background: black;
+  padding-top: 40px;
+}
+
+.footer-about {
+  margin-bottom: 30px;
+}
+
+.footer-about .footer-logo {
+  margin-bottom: 40px;
+}
+
+.footer-about p {
+  color: #b7b7b7;
+  margin-bottom: 30px;
+}
+
+.footer-widget {
+  margin-bottom: 30px;
+}
+
+.footer-widget h6 {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.footer-widget ul li {
+  line-height: 36px;
+  list-style: none;
+}
+
+.footer-widget ul li a {
+  color: #b7b7b7;
+  font-size: 20px;
+}
+
+.footer-widget ul li a:hover {
+  color: #bd8c8c;
+}
+
+.footer-widget .footer-newslatter p {
+  color: #b7b7b7;
+  font-size: 20px;
+}
+
+.footer-copyright-text {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+.footer-copyright-text p {
+  color: gray;
+  margin-bottom: 0;
+}
+
+.footer-copyright-text p i {
+  color: #e53637;
+}
+
+.footer-copyright-text p a {
+  color: rgba(189, 105, 8, 0.808);
 }
 
 .contactdescription a {
@@ -22,7 +110,7 @@
 }
 
 figcaption {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .fabrica img {
@@ -34,49 +122,36 @@ figcaption {
 }
 
 .quehacemos img:hover {
-  -webkit-animation: mesa 5s;
-          animation: mesa 5s;
+  -webkit-animation: mesa 2s;
+          animation: mesa 2s;
 }
 
 @-webkit-keyframes mesa {
   10% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
   }
 }
 
 @keyframes mesa {
   10% {
-    -webkit-transform: scale(2);
-            transform: scale(2);
+    transform: scale(2);
   }
 }
-
 .collapse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .navbar-nav {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  align-items: flex-end;
 }
 
-.navbar-toggler {
-  background-color: #d17f58;
-}
-
-a:hover {
-  background-color: #c95f2f;
+.nav-link:hover {
+  background-color: rgb(206, 98, 48);
 }
 
 .carousel-inner {
   max-height: 800px;
 }
-
 .carousel-inner img {
   max-height: 800px;
 }
@@ -102,113 +177,130 @@ body {
   color: black;
 }
 
+.historia {
+  color: black;
+  margin-bottom: 20px;
+}
+
 @media (min-width: 390px) {
   .fabrica img {
     max-height: 200px;
   }
+
   .nosotros img {
     max-height: 70px;
   }
+
   .container {
     margin-top: 300px;
   }
+
   .containertexto {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
   }
+
   .quehacemos img {
     max-width: 200px;
     margin-bottom: 0px;
     margin-top: 0px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
+
   .site-footer {
     background-color: black;
     margin-bottom: auto;
   }
+
   .main {
-    font-family: 'Quicksand', sans-serif;
+    font-family: "Quicksand", sans-serif;
   }
-  .videos {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 100px;
+
+  .fotosclientes {
+    max-width: 500px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    flex-direction: column-reverse;
   }
 }
-
 @media (min-width: 900px) {
   .fabrica img {
     max-height: 300px;
   }
+
   .nosotros img {
     max-height: 60px;
   }
-  .videos {
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-  }
+
   .quehacemos img {
     max-height: 200px;
   }
+
   .quehacemos img {
     margin: 10px, auto;
   }
+
   .quehacemos img:hover {
     -webkit-animation: mesa 5s;
             animation: mesa 5s;
   }
+
   @-webkit-keyframes mesa {
     10% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
+      transform: scale(2);
     }
   }
+
   @keyframes mesa {
     10% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
+      transform: scale(2);
     }
   }
 }
-
 @media (min-width: 1300px) {
   .fabrica img {
     max-height: 500px;
   }
+
   .nosotros img {
     max-height: 70px;
   }
-  .videos {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+
+  .fotosclientes {
+    flex-direction: row-reverse;
   }
+
+  .fcliente1 {
+    max-height: 20px;
+  }
+
   .quehacemos img {
     margin: 10px, auto;
   }
+
   .quehacemos img:hover {
     -webkit-animation: mesa 5s;
             animation: mesa 5s;
   }
+
+  .fotosclientes {
+    max-width: 500px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    flex-direction: column-reverse;
+  }
+
   @-webkit-keyframes mesa {
     10% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
+      transform: scale(2);
     }
   }
+
   @keyframes mesa {
     10% {
-      -webkit-transform: scale(2);
-              transform: scale(2);
+      transform: scale(2);
     }
   }
-}
-/*# sourceMappingURL=style1.css.map */
+}/*# sourceMappingURL=style1.css.map */
